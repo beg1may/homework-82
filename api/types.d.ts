@@ -6,3 +6,13 @@ export interface IArtists {
 }
 
 export type IArtistWithoutId = Omit<IArtists, "id">;
+
+export interface IAlbums {
+    id: string;
+    name: string;
+    artist: string;
+    yearOfManufacture: number;
+    image: string | null;
+}
+
+export type IAlbumWithoutId = Omit<IAlbums, "id">;

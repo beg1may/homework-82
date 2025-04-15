@@ -16,3 +16,12 @@ export interface IAlbums {
 }
 
 export type IAlbumWithoutId = Omit<IAlbums, "id">;
+
+export interface ITracks {
+    id: string;
+    name: string;
+    album: string;
+    duration: string;
+};
+
+export type ITrackWithoutId = Omit<ITracks, "id">;

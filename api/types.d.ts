@@ -22,6 +22,12 @@ export interface ITracks {
     name: string;
     album: string;
     duration: string;
-};
+}
 
 export type ITrackWithoutId = Omit<ITracks, "id">;
+
+export interface IUser {
+    username: string;
+    password: string;
+    token: string;
+}

@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import artistRouter from "./routers/artists";
 import albumsRouter from "./routers/albums";
 import trackRouter from "./routers/track";
+import usersRouter from "./routers/users";
 
 const app = express();
 const port = 8000;
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use('/artists', artistRouter);
 app.use('/albums', albumsRouter);
 app.use('/tracks', trackRouter);
+app.use('/users', usersRouter);
 
 const run = async () => {
     await mongoose.connect('mongodb://localhost/homework-82');
